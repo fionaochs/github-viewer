@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserControls matches a user snapshot 1`] = `
+<Fragment>
+  <input
+    name="name"
+    type="text"
+    value="userName"
+  />
+  <button
+    name="button"
+    type="button"
+  >
+    Search for user
+  </button>
+</Fragment>
+`;

@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Repos match a repos snapshot 1`] = `
+<ul>
+  <li
+    key="1"
+  >
+    <Repo
+      id={1}
+      issues="issues"
+      pr="pr"
+      repoName="repo"
+      userName="me"
+    />
+  </li>
+  <li
+    key="2"
+  >
+    <Repo
+      id={2}
+      issues="issues"
+      pr="pr"
+      repoName="repo"
+      userName="me"
+    />
+  </li>
+</ul>
+`;

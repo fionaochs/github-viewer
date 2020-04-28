@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserDisplay matches a user display snapshot 1`] = `
+<ul>
+  <li
+    key="me"
+  >
+    <p>
+      me
+    </p>
+    <p>
+      50
+    </p>
+    <p>
+      50
+    </p>
+    <a>
+      Link to github
+    </a>
+  </li>
+</ul>
+`;
