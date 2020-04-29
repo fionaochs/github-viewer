@@ -4,11 +4,15 @@ import { fetchRepos } from '../../services/githubRepos.js';
 
 export default class AllRepos extends Component {
   state = {
-    repos: [],
+    repos: [{
+      repoName: 'name',
+      userName: 'fionaochs',
+      url: 'url'
+    }],
   }
 
   componentDidMount() {
-    fetchRepos()
+    fetchRepos(this.state.userName)
       .then(repos => this.setState({ repos }));
   }
 
