@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { fetchUser } from '../../services/githubUser.js';
 import UserControls from '../../components/UserControls/UserControls.jsx';
 import UserDisplay from '../../components/UserDisplay/UserDisplay.jsx';
+import Repos from '../../components/UserRepos/Repos.jsx';
 
 export default class User extends Component {
   state = {
@@ -33,6 +34,7 @@ export default class User extends Component {
       <>
         <UserControls onSubmit={this.handleSubmit} userName={userName} />
         <UserDisplay {...userDisplay}/>
+        <Repos userName={this.state.userName}/>
       </>
     );
   }

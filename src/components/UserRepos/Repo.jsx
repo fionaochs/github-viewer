@@ -1,26 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Repo = ({ userName, repoName, pr, issues, url }) => {
+const Repo = ({ name, html_url }) => {
   return (
-    <ul>
-      <li key={userName.id}>
-        <a href={url}>{repoName}</a> 
-        <p>{userName}</p>
-        <p>{pr}</p>
-        <p>{issues}</p>
-      </li>
-    </ul>
-  );
+    <a href={html_url}>{name}</a> 
+);
 };
 
 Repo.propTypes = {
   id: PropTypes.number.isRequired,
-  url: PropTypes.string.isRequired,
-  userName: PropTypes.string.isRequired,
-  repoName: PropTypes.string.isRequired,
-  pr: PropTypes.string.isRequired,
-  issues: PropTypes.string.isRequired,
+  html_url: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
 };
 
 export default Repo;

@@ -18,12 +18,9 @@ const Repos = ({ repos }) => {
 
 Repos.propTypes = {
   repos: PropTypes.arrayOf(PropTypes.shape({
-    url: PropTypes.string.isRequired,
+    html_url: PropTypes.string.isRequired,
     id: PropTypes.number.isRequired,
-    userName: PropTypes.string.isRequired,
-    repoName: PropTypes.string.isRequired,
-    pr: PropTypes.string.isRequired,
-    issues: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
   })).isRequired
 };
 

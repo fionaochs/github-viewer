@@ -4,10 +4,10 @@ import Repo from './Repos';
 
 describe('Repo', () => {
   it('matches a users repo snapshot', () => {
-    const wrapper = shallow(<Repo userName='me'
-      repoName='rottenPlantain'
-      pr='5'
-      issues='issues' />);
+    const wrapper = shallow(<Repo
+      name='rottenPlantain'
+      html_url='url'
+    />);
     expect(wrapper).toMatchSnapshot();
   });
 });
